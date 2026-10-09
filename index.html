@@ -38,14 +38,14 @@
   <main>
     <section id="setup" class="setup" hidden>
       <h2>Cần cấu hình URL Google Apps Script</h2>
-      <p>Mở file <code>index.html</code>, tìm dòng <code>const WEB_APP_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_EXEC_URL_HERE';</code> và thay phần trong dấu nháy bằng URL Web App đang hoạt động, thường kết thúc bằng <code>/exec</code>.</p>
+      <p>Mở file <code>index.html</code>, tìm dòng <code>const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbybZ_7K1hFsFLvBsX6djGvzkBMMnCQYPe1-Dlf4fLTNd2arDGNsKEuO3NW8l9Z_SLkl/exec';</code> và thay phần trong dấu nháy bằng URL Web App đang hoạt động, thường kết thúc bằng <code>/exec</code>.</p>
       <p>Không dùng URL trang chỉnh sửa Apps Script hoặc URL Google Sheets. Sau khi sửa, lưu file và tải lên kho GitHub Pages.</p>
     </section>
     <div class="frame-wrap" id="frameWrap"><iframe id="dashboard" title="Bảng thống kê báo cáo MTTQ xã Vệ Giang" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen"></iframe></div>
   </main>
   <script>
     // Dán URL Web App Google Apps Script đang hoạt động, ví dụ: https://script.google.com/macros/s/DEPLOYMENT_ID/exec
-    const WEB_APP_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_EXEC_URL_HERE';
+    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbybZ_7K1hFsFLvBsX6djGvzkBMMnCQYPe1-Dlf4fLTNd2arDGNsKEuO3NW8l9Z_SLkl/exec';
     const frame = document.getElementById('dashboard');
     const status = document.getElementById('status');
     const setup = document.getElementById('setup');
